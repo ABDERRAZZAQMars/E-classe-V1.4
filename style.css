@@ -1,0 +1,18 @@
+#btnmenu {
+    display: none;
+}
+
+@media (max-width:992px) {
+    #nav-menu {
+        position: absolute;
+        margin-left: -800px;
+        transition: 1s;
+    }
+    #menu:checked+#nav-menu {
+        margin-left: 0px;
+        transition: 1s;
+    }
+    #btnmenu {
+        display: block;
+    }
+}
